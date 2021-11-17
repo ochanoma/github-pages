@@ -1,0 +1,158 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400&display=swap');
+
+html, body {
+    background-color: rgb(234, 240, 234);
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 16px;
+}
+
+/* --- ロゴ関連 [ 開始 ]--- */
+.logo {
+    display: flex;
+    flex-direction: row;
+    user-select: none;
+}
+
+.logo-mark {
+    background-color: rgb(234, 240, 234);
+    display: block;
+    height: 60px;
+    padding: 1px;
+    position: relative;
+    width: 60px;
+}
+
+.logo-border {
+    border: 4px solid rgb(0, 128, 0);
+    height: 58px;
+    width: 58px;
+}
+
+.logo-border::before {
+    background-color: rgb(234, 240, 234);
+    content: '';
+    display: block;
+    height: 26px;
+    left: 1px;
+    position: absolute;
+    top: 16px;
+    width: 58px;
+}
+
+.logo-border::after {
+    background-color: rgb(234, 240, 234);
+    content: '';
+    display: block;
+    height: 58px;
+    left: 16px;
+    position: absolute;
+    top: 1px;
+    width: 26px;
+}
+
+.logo-inner {
+    background-color: rgb(234, 240, 234);
+    color: rgb(0, 128, 0);
+    display: block;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.8em;
+    font-weight: bold;
+    height: 48px;
+    left: 6px;
+    line-height: 48px;
+    padding-left: 2px;
+    position: absolute;
+    text-align: center;
+    top: 6px;
+    width: 48px;
+}
+
+.logo-name {
+    color: rgb(0, 128, 0);
+    font-family: 'Roboto Slab', serif;
+    font-size: 2.4em;
+    font-weight: bold;
+    line-height: 60px;
+    margin-left: 8px;
+}
+/* --- ロゴ関連 [ 終了 ]--- */
+
+/* --- ナビ関連 [ 開始 ] --- */
+nav > ul {
+    display: flex;
+    flex-direction: row;
+}
+
+nav > ul > li > a {
+    border-radius: 10px;
+    box-sizing: border-box;
+    color: rgb(0, 128, 0);
+    display: block;
+    font-weight: bold;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    width: 160px;
+}
+
+nav > ul > li > a:hover {
+    background-color: rgba(128, 128, 128, 0.2);
+}
+/* --- ナビ関連 [ 終了 ] --- */
+
+
+
+.main {
+    font-family: 'Zen Maru Gothic', sans-serif;
+    margin: 0 auto;
+    max-width: 1200px;
+    height: 100vh;
+}
+
+.base {
+    background-color: rgb(250, 250, 250);
+    border-radius: 16px;
+    box-shadow: rgba(220, 220, 220, 0.5) 0 0 8px 8px;
+    margin: 24px;
+    padding: 16px;
+}
+
+.base > h2 {
+    border-bottom: 2px solid rgb(0, 128, 0);
+    color: rgb(0, 128, 0);
+    font-size: 1.6em;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.base > div {
+    padding: 16px;
+}
+
+.base > div > p {
+    line-height: 24px;
+}
+
+.base > span {
+    color: rgb(161, 161, 161);
+    display: block;
+    text-align: right;
+}
+
+.about > div > p:first-child {
+    font-size: 1.4em;
+    margin-bottom: 8px;
+}
